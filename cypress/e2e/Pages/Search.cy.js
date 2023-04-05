@@ -1,4 +1,4 @@
-export class search {
+export class search_class {
     AdvancedSearch = "//*[@id='advs']"
     DedicatedSearchButton = "//button[@class='button-1 search-button']"
     Category = "//*[@id='cid']"

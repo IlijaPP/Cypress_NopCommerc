@@ -22,7 +22,11 @@ export class loginPage_class {
         cy.xpath(this.LogInButton).click()
     }
 
-    validate_login(message) {
+    validate_login() {
+        cy.xpath(this.SuccessfulLogIn).should('be.visible')
+    }
+
+    validate_invalid_login(message) {
         cy.xpath(this.UnsuccessfulLogin).should('include.text',message)
     }
 

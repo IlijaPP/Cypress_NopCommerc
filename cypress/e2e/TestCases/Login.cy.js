@@ -4,12 +4,7 @@ import { header_class } from "../Pages/Header.cy"
 const header = new header_class()
 const loginPage = new loginPage_class()
 
-let fixtureData;
-before( () => {
-    cy.fixture('testData').then((data) => {
-        fixtureData=data
-    })
-})
+
 
 beforeEach( () => {
     header.navigate_to_login_page()

@@ -1,4 +1,4 @@
-export class shoppingCart {
+export class shoppingCart_class {
     OpenShoppingCart = "(//a[@href='/cart'])[1]"
     Cart_QuantityInput = "//input[@class='qty-input']"
     Cart_ItemPrice = "//span[@class='product-unit-price']"

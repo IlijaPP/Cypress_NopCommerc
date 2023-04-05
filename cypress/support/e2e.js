@@ -23,4 +23,13 @@ require('cypress-xpath')
 beforeEach( () => {
     cy.visit('https://demo.nopcommerce.com/')
     cy.title().should('eq','nopCommerce demo store')
+    
+})
+
+let fixtureData;
+before( () => {
+    cy.fixture('testData').then((data) => {
+        fixtureData=data
+    })
+    cy.viewport(1024, 768)
 })
